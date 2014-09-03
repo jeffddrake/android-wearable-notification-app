@@ -2,6 +2,12 @@
 <resources>
 
     <string name="app_name">FirstBuildWearableHack</string>
+    <string name="main_header">Press the button below to test sending a notification.</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_handle_button_press">HandleButtonPressActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="EXTRA_VOICE_REPLY">extra_voice_reply</string>
+    <string name="notification_header_text_id">com.example.jeffdrake.wearable_notification_test_100</string>
+    <string name="voice_return_header">You just said the following</string>
 
 </resources>
