@@ -56,7 +56,6 @@ public class HomeActivity extends Activity {
     public void buttonPressed(View view) {
 
         String replyLabel = getResources().getString(R.string.app_name);
-
         RemoteInput remoteInput = new RemoteInput.Builder(getResources().getString(R.string.EXTRA_VOICE_REPLY))
                 .setLabel(replyLabel)
                 .build();
@@ -69,7 +68,6 @@ public class HomeActivity extends Activity {
 
         PendingIntent viewPendingIntent =
                 PendingIntent.getActivity(this, 0, replyIntent, 0);
-
 
         // Create the reply action and add the remote input
         NotificationCompat.Action action =
@@ -87,12 +85,8 @@ public class HomeActivity extends Activity {
         // Get an instance of the NotificationManager service
         NotificationManagerCompat notificationManager =
                 NotificationManagerCompat.from(getApplicationContext());
-
         // Build the notification and issues it with notification manager.
-        //notificationManager.notify(notificationId, notificationBuilder.build());
         notificationManager.notify(notificationId, notification);
-
-        //startActivity(intent);
 
     }
 }
