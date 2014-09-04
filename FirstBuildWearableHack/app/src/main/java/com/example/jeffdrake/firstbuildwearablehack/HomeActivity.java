@@ -84,15 +84,6 @@ public class HomeActivity extends Activity {
                         .extend(new WearableExtender().addAction(action))
                         .build();
 
-
-//        NotificationCompat.Builder notificationBuilder =
-//                new NotificationCompat.Builder(getApplicationContext())
-//                        .setSmallIcon(R.drawable.ic_launcher1b)
-//                        .setContentTitle("Your Dryer Is Summoning You")
-//                        .setContentText("Your Laundry Is Done, Go Get It Lazy Ass.")
-//        .setContentIntent(viewPendingIntent)
-//        .extend(new WearableExtender().addAction(action));
-
         // Get an instance of the NotificationManager service
         NotificationManagerCompat notificationManager =
                 NotificationManagerCompat.from(getApplicationContext());

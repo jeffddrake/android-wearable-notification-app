@@ -9,7 +9,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".HomeActivity"
-            android:label="@string/app_name" >
+            android:label="First Build Connected Home" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +18,7 @@
         </activity>
         <activity
             android:name=".HandleButtonPressActivity"
-            android:label="@string/title_activity_handle_button_press" >
+            android:label="First Build Connected Home" >
         </activity>
     </application>
 

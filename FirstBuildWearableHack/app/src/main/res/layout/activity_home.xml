@@ -15,12 +15,30 @@
         android:layout_height="wrap_content" />
 
     <Button
+        android:id="@+id/notification_return_header_button_id_100"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Send A Wearable Notification"
-        android:id="@+id/button"
         android:onClick="buttonPressed"
         android:layout_gravity="left|top"
         android:layout_below="@id/notification_return_header_id_101"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+    <ImageView
+        android:id="@+id/test_image"
+        android:src="@drawable/washericon"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:paddingTop="150dp"
+        android:layout_below="@id/notification_return_header_button_id_100"
+        />
+    </LinearLayout>
 
 </RelativeLayout>

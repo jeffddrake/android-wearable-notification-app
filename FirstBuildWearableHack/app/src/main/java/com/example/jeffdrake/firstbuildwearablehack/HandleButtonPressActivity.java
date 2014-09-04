@@ -16,6 +16,9 @@ public class HandleButtonPressActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_handle_button_press);
+        //JDD - just put some default text before we capture the voice text
+        TextView TempText = (TextView)findViewById(R.id.notification_return_header_id_102);
+        TempText.setText("... wait for it ...");
     }
 
 
@@ -52,7 +55,6 @@ public class HandleButtonPressActivity extends Activity {
             DynamicDisplay.setText("I'm sorry, what did you say?");
         }
 
-        //DynamicDisplay.setText("hello");
 
     }
 
@@ -60,20 +62,6 @@ public class HandleButtonPressActivity extends Activity {
     private CharSequence getMessageText(Intent intent) {
         Bundle remoteInput = null;
         remoteInput = RemoteInput.getResultsFromIntent(intent);
-//        Bundle data = intent.getExtras();
-//        if(data.isEmpty() == true)
-//        {
-//            Log.d("ERROR", "Empty bundle");
-//        }
-//        else
-//        {
-//            Log.d("ERROR", "Bundle was not empty");
-//            Set<String> keys = data.keySet();
-//            int size = data.size();
-//            Log.d("ERROR", String.valueOf(size));
-//            String[] array = keys.toArray(new String[0]);
-//            Log.d("ERROR", array[0]);
-//        }
 
         if (remoteInput != null) {
             return remoteInput.getCharSequence(getResources().getString(R.string.EXTRA_VOICE_REPLY));
